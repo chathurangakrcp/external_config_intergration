@@ -23,6 +23,9 @@ class App extends Component {
     }
   };
   render() {
+    if(!this.state.config){
+      return <div>Loading...</div>
+    }
     return (
       <div className="App">
         <header className="App-header">
